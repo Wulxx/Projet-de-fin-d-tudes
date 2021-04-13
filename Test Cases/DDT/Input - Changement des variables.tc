@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Input - Changement des variables</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a57d28d4-90dc-4539-ba2b-c5afd250062b</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c39e7c66-3c34-4825-9b47-faadf68aa7da</id>
+      <masked>false</masked>
+      <name>Recherche</name>
+   </variable>
+</TestCaseEntity>
