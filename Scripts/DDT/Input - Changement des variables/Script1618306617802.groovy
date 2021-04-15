@@ -19,16 +19,14 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-String strURL = findTestData('Input/Input_Reference').getValue(1, loop)
+String strURL = findTestData('Input/Input_Reference').getValue(1,1)
 WebUI.navigateToUrl(strURL)
 
 WebUI.click(findTestObject('Object Repository/Page_Google/div_Jaccepte'))
 
 for (def loop = 1; loop <= findTestData('Input/Input_Reference').getRowNumbers(); loop++) //getRowNumbers permet de détecter automatiquement le nombres de lignes utiles dans le fichier Excel) 
 	{
-    WebUI.setText(findTestObject('Object Repository/Page_Google/input__q'), findTestData('Input/Input_Reference').getValue(1, loop) //loop ici sert à définir sur quelle ligne du fichier Excel la donnée est récupérée
-        )
-
+    WebUI.setText(findTestObject('Object Repository/Page_Google/input__q'), findTestData('Input/Input_Reference').getValue(1, loop)) //loop ici sert à définir sur quelle ligne du fichier Excel la donnée est récupérée
     WebUI.sendKeys(findTestObject('Object Repository/Page_Google/input__q'), Keys.chord(Keys.ENTER))
     Thread.sleep(3000)
 }

@@ -6,12 +6,12 @@
    <elementGuidId>fdfaedbc-ce21-4b5a-8c4b-0466d86924ef</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@name='q']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>input[name=&quot;q&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='q']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -126,7 +126,7 @@
       <matchCondition>equals</matchCondition>
       <name>data-ved</name>
       <type>Main</type>
-      <value>0ahUKEwiAx9Pg3uvvAhVILBoKHSUBB3AQ39UDCAQ</value>
+      <value>0ahUKEwilw4jq3v_vAhWO2hQKHWSBDzkQ39UDCAU</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -141,6 +141,13 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@name='q']</value>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/div/div[2]/input</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

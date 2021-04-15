@@ -17,3 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://www.google.com/')
+WebUI.click(findTestObject('Object Repository/Page_Google/div_Jaccepte'))
+WebUI.setText(findTestObject('Object Repository/Page_Google/input__q'), 'Katalon Studio')
+WebUI.sendKeys(findTestObject('Object Repository/Page_Google/input__q'), Keys.chord(Keys.ENTER))
+String result = WebUI.getText(findTestObject('Object Repository/Page_Katalon Studio - Recherche Google/h3_Katalon  Simplify Web, API, Mobile, Desk_d51335'))
+CustomKeywords.'myPackExcel.WriteExcel.Output'(result)
+WebUI.closeBrowser()
+
